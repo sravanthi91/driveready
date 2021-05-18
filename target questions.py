@@ -1,30 +1,19 @@
-#Sandhya, a software analyst bought a new split-Ac to her house. She was researching her Ac’s temperature limits by increasing and decreasing. The table is as follows#
-"""
-sample Input
-Sample Output
->=16 and<=25
-very cool
->25 and <=32
-cool
->32
-no effect
-                 
- 
- 
-Sample input1:
-17
-Sample Output1:
-very cool
-Sample Input 2:
-35
-Sample Output:
-no effect
-"""
+# Jhon and Mr Javid are best friends, and javid is habbituated to read in right to left, write a logic to take a number in jhon point of view and print it in Javid perspective#
 
-temp=int(input())
-if(temp>=16 and temp<=25):
-    print("very cool")
-elif(temp>25 and temp<=32):
-    print("cool")>32
-else:
-    print("no effect")
+"""
+i/p:
+1234
+o/p:
+4321
+For example:
+Test	Input	Result
+1       2431    1342
+2      97389    98379
+"""
+n=int(input())
+reverse=0
+while(n!=0):
+    r=n%10
+    reverse=reverse*10+r
+    n=n//10
+print(reverse)
