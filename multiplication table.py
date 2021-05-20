@@ -1,6 +1,8 @@
-"""program to print multiples of given int upto given range
-"""
+"""program for splitting input"""
 
 n=int(input())
-for i in range(0,21):
-    print(n,"*",i,"=",n*i)
+while(n!=0):
+    r=n%10
+    n=n//10
+    print(r,n)
+
